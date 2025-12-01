@@ -6,18 +6,18 @@ const lines = fs.readFileSync(path.join(__dirname, 'input.txt'), { encoding: 'ut
 let curNumber = 50
 let zeroCount = 0
 
-lines.map(l => {
+lines.forEach(l => {
   const [dir, count] = [l[0], +l.slice(1)]
   const val = (dir === 'L') ? -count : count
 
   curNumber = (curNumber + val) % 100
 
-  if (curNumber < 0) {
-    curNumber = 99 + curNumber + 1
-  }
-
   if (curNumber === 0) {
     zeroCount++
+  }
+
+  if (curNumber < 0) {
+    curNumber += 100
   }
 })
 
