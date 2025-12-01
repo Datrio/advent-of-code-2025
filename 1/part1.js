@@ -8,23 +8,17 @@ let zeroCount = 0
 
 lines.map(l => {
   const [dir, count] = [l[0], +l.slice(1)]
+  const val = (dir === 'L') ? -count : count
 
-  if (dir === 'L') {
-    curNumber = (curNumber - count + 100) % 100
+  curNumber = (curNumber + val) % 100
 
-    if (curNumber < 0) {
-      curNumber = 99 + curNumber + 1
-    }
-  }
-  if (dir === 'R') {
-    curNumber = (curNumber + count) % 100
+  if (curNumber < 0) {
+    curNumber = 99 + curNumber + 1
   }
 
   if (curNumber === 0) {
     zeroCount++
   }
-
-  console.log(`After ${l}, current number is ${curNumber}`)
 })
 
-console.log('Zero count:', zeroCount)
+console.log(zeroCount)
