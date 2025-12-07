@@ -1,5 +1,5 @@
 module.exports = (data) => {
-  const lines = data.split(',')
+  const lines = data.trim().split(',')
 
   let sum = 0
 

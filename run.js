@@ -21,7 +21,7 @@ if (!day) {
 
 function executeScript(dayNumber, scriptPart, dataType = 1) {
   let filename = dataType === 1 ? 'input.txt' : 'example.txt'
-  const lines = fs.readFileSync(path.join(__dirname, dayNumber.toString(), filename), { encoding: 'utf8' }).trim()
+  const lines = fs.readFileSync(path.join(__dirname, dayNumber.toString(), filename), { encoding: 'utf8' })
   
   console.log(`Executing AoC 2025, Day ${dayNumber}, Part ${scriptPart}, Data: ${filename}`);
   

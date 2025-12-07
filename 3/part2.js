@@ -10,7 +10,7 @@ function removeSmallestDigit(line) {
 }
 
 module.exports = (data) => {
-  const lines = data.split('\n')
+  const lines = data.trim().split('\n')
 
   const finalSum = lines.map(line => {
     // iterate over the first numbers, if we find a smaller number, remove it, until we have 12 digits

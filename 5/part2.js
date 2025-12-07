@@ -1,5 +1,5 @@
 module.exports = (data) => {
-  const [ranges, ] = data.split('\n\n').map(part => part.split('\n'))
+  const [ranges, ] = data.trim().split('\n\n').map(part => part.split('\n'))
 
   const mergedRanges = []
 

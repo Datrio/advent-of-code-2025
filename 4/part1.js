@@ -1,5 +1,5 @@
 module.exports = (data) => {
-  const lines = data.split('\n')
+  const lines = data.trim().split('\n')
 
   let cratesAround = 0
   let accessableCrates = 0

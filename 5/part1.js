@@ -1,5 +1,5 @@
 module.exports = (data) => {
-  const [ranges, ids] = data.split('\n\n').map(part => part.split('\n'))
+  const [ranges, ids] = data.trim().split('\n\n').map(part => part.split('\n'))
 
   const isValid = (id) => {
     for (let range of ranges) {

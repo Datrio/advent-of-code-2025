@@ -13,7 +13,7 @@ function findTwoHighestDigits(line) {
   }
 
 module.exports = (data) => {
-  const lines = data.split('\n')
+  const lines = data.trim().split('\n')
 
   const finalSum = lines.map(line => {
     let [digitOne, digitTwo] = findTwoHighestDigits(line)
