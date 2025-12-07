@@ -33,7 +33,7 @@ module.exports = (data) => {
       return [digitOne, digitTwo]
     }
   })
-  .map(([digitOne, digitTwo]) => Number(`${digitOne}${digitTwo}`))
+  .map(([digitOne, digitTwo]) => digitOne * 10 + digitTwo)
   .reduce((a, b) => a + b, 0)
 
   return finalSum

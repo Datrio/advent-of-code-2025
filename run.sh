@@ -5,4 +5,4 @@ DAY=$1
 PART=$2
 TYPE=$3
 
-node run "$DAY" "$part" "$type"
+npm run start "$DAY" "$part" "$type"

@@ -1,0 +1,13 @@
+{
+	"name": "advent-of-code-2025",
+	"version": "1.0.0",
+	"type": "commonjs",
+  "scripts": {
+    "start": "node ./run.js",
+    "test": "jest --colors",
+    "test:watch": "jest --watch"
+	},
+	"devDependencies": {
+		"jest": "^29.6.0"
+	}
+}
