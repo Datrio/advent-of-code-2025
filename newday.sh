@@ -33,3 +33,4 @@ echo "$PAGE_CONTENT" | awk '{
 }' | sed 's/<pre><code>//;s/<\/code><\/pre>//' > "${DAY}/example.txt"
 
 awk 'NF' "${DAY}/example.txt" > temp.txt && mv temp.txt "${DAY}/example.txt"
+mv "${DAY}/integration.js" "${DAY}/integration.test.js"

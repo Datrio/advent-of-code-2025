@@ -1,5 +1,5 @@
 module.exports = (data) => {
-  const lines = data.split('\n')
+  const lines = data.trim().split('\n')
 
   const symbols = lines.pop().split(/\s+/).filter(v => v !== '')
 

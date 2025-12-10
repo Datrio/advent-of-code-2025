@@ -10,9 +10,9 @@ describe('integration: day X', () => {
     expect(result).toBe(75680)
   })
 
-  test.skip('part2', () => {
+  test('part2', () => {
     const result = require('./part2.js')(data)
 
-    expect(result).toBe(X)
+    expect(result).toBe(8995844880)
   })
 })
